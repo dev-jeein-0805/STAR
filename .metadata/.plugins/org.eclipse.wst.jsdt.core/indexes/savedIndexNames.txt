@@ -1,2 +1,0 @@
-INDEX VERSION 1.4+C:\web_1900_hji\jsp-project\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3546173663.index
