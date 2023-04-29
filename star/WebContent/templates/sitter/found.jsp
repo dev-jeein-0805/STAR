@@ -85,6 +85,7 @@
                                         value="332"><label for="tmino_23" class="label_chk">마포구</label></li>
                             </ul>
                         </section>
+<<<<<<< HEAD
                         <section><strong>경기도<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_31" class="inp_chk"
@@ -101,6 +102,8 @@
                                         value="232"><label for="tmino_36" class="label_chk">용인</label></li>
                             </ul>
                         </section>
+=======
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                         <!-- <section><strong><button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_37" class="inp_chk"
@@ -130,8 +133,15 @@
                             </div> 
                         </div>
                         <div id="poduct_list_area">
+<<<<<<< HEAD
                             <li class="list_4 adcno6">
                                 <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
+=======
+                        	<ul>
+                        	</ul>
+                         <%--    <li class="list_4 adcno6">
+                                <a href="${pageContext.request.contextPath}/sitterDetailOk.user?userNumber=1">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -150,8 +160,13 @@
                                         </div>
                                     </div>
                                 </a>
+<<<<<<< HEAD
                             </li>
                             <li class="list_4 adcno6">
+=======
+                            </li> --%>
+                           <!--  <li class="list_4 adcno6">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                                 <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
@@ -234,7 +249,11 @@
                                         </div>
                                     </div>
                                 </a>
+<<<<<<< HEAD
                             </li>
+=======
+                            </li> -->
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                         </div>
                     </div>
                 </div>
@@ -285,4 +304,13 @@ document.addEventListener('scroll', () => {
 });
 
 </script>
+<<<<<<< HEAD
+=======
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	let users = `${users}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/sitter/list.js"></script>
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </html>
