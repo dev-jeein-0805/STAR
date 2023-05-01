@@ -7,6 +7,7 @@ import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,13 +25,13 @@ public class ReviewLoadOkController implements Action {
       Result result = new Result();
       JSONArray jsonArray = new JSONArray();
       
-      
       int page = Integer.parseInt(req.getParameter("page"));
       
       HashMap<String, Object> pagable = new HashMap<String, Object>();
       
       pagable.put("offset", (page - 1) * 5);
       pagable.put("rowCount", 5);
+
       
       reviewDAO.selectAll(pagable).stream().map(review -> new JSONObject(review)).forEach(jsonArray::put);
       

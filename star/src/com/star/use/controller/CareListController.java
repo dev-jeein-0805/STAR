@@ -29,7 +29,7 @@ public class CareListController implements Action {
 		result.setPath("/templates/mypage/carelist.jsp");
 		out.print(jsonArray.toString());
 		out.close();
-		
+
 		return result;
 	}
 

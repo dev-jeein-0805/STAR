@@ -5,9 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/modal.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/review.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<link rel="stylesheet"
+   href="${pageContext.request.contextPath}/static/css/mypage/review.css">
+<link rel="stylesheet"
+   href="${pageContext.request.contextPath}/static/css/modal.css">
+<link rel="stylesheet" type="text/css"
+   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <title>Insert title here</title>
 </head>
 <body>
@@ -56,7 +59,6 @@
                <!-- 내용 감싸는 ul -->
                <ul class="content-wrap">
 
-
                </ul>
             </div>
          </div>
@@ -73,12 +75,12 @@
       </div>
    </div>
 </body>
-
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
    let contextPath = "${pageContext.request.contextPath}"
 </script>
-</html>
-<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+<script src="../../static/js/modal/modal.js"></script>
+<script src="../../static/js/mypage/review.js"></script>
+<script src="../../static/js/mypage/header.js"></script>
 </html>
 
