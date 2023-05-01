@@ -27,5 +27,9 @@ public SqlSession sqlSession;
       sqlSession.delete("review.delete",reviewNumber);
    }
    
+// 전체 이용후기 화면
+   public List<ReviewDTO> selectOverall(){
+	   return sqlSession.selectList("review.selectOverall");
+   }
 }
 

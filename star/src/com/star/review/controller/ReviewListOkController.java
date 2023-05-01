@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 import com.star.Action;
 import com.star.Result;
-import com.star.review.dao.ReviewListDAO;
+import com.star.review.dao.ReviewDAO;
 
 public class ReviewListOkController implements Action {
 
@@ -20,10 +20,11 @@ public class ReviewListOkController implements Action {
 	    resp.setContentType("text/html; charset=utf-8");
 	    System.out.println("컨트롤러 들어옴");
 	    
-		ReviewListDAO reviewListDAO = new ReviewListDAO();
+		ReviewDAO reviewDAO = new ReviewDAO();
 		Result result = new Result();
-		JSONArray jsonArray = new JSONArray();    
-	    reviewListDAO.selectOverall().stream().map(review -> new JSONObject(review)).forEach(jsonArray::put);
+		JSONArray jsonArray = new JSONArray();
+		
+	    reviewDAO.selectOverall().stream().map(review -> new JSONObject(review)).forEach(jsonArray::put);
 	    req.setAttribute("reviews", jsonArray.toString());
 	    result.setPath("templates/2yong/2yong.jsp");
 	    return result;
