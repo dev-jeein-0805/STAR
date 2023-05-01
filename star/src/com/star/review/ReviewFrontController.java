@@ -29,7 +29,7 @@ public class ReviewFrontController extends HttpServlet {
          result = new ReviewLoadOkController().execute(req, resp);
       }else if(target.equals("reviewDeleteOk")) {
          result= new ReviewDeleteOkController().execute(req, resp);
-      }else if(target.equals("ListAllOk")) {
+      }else if(target.equals("listAllOk")) {
     	  result= new ReviewListOkController().execute(req, resp);
       }
       
