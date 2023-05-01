@@ -32,7 +32,6 @@
   	<servlet-name>Use</servlet-name>
   	<url-pattern>*.use</url-pattern>
   </servlet-mapping>
-  
   <servlet>
   	<servlet-name>Use</servlet-name>
   	<servlet-class>com.star.use.UseFrontController</servlet-class>
@@ -42,7 +41,6 @@
   	<servlet-name>User</servlet-name>
   	<url-pattern>*.user</url-pattern>
   </servlet-mapping>
-  
   <servlet>
   	<servlet-name>User</servlet-name>
   	<servlet-class>com.star.user.UserFrontController</servlet-class>

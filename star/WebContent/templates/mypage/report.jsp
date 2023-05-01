@@ -76,6 +76,8 @@
 </body>
 
 <script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/report.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/modal/modal.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
    let contextPath = "${pageContext.request.contextPath}"

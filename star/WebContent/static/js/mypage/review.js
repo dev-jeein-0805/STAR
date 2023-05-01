@@ -40,6 +40,9 @@ function next_load() {
             showList(result);
             loading = false;    //실행 가능 상태로 변경
          }
+else{
+	console.log("바보");
+}
       }, complete: function() {
          $('.wrap-loading').addClass('display-none');
       }, error: function(request, status, error) { // 오류가 발생했을 때 호출된다.
